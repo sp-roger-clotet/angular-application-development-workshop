@@ -30,7 +30,7 @@
      * Send message
      */
     function send() {
-
+      console.log(vm.data);
     }
   }
 })();
