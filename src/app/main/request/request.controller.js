@@ -15,8 +15,9 @@
    * @memberOf Controllers
    * @ngInject
    */
-  function RequestController() {
+  function RequestController(firebase) {
     var vm = this;
+    var ref = new Firebase(firebase.host + '/data');
 
     // Data
     vm.data = {};
@@ -30,7 +31,9 @@
      * Send message
      */
     function send() {
-      console.log(vm.data);
+      var newMessageRef = ref.push();
+      newMessageRef.set(vm.data);
+      vm.data = {};
     }
   }
 })();

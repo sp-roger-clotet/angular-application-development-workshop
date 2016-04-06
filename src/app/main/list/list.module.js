@@ -2,15 +2,15 @@
   'use strict';
 
   angular
-    .module('app.request', [])
+    .module('app.list', [])
     .config(config);
 
   /** @ngInject */
   function config($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'app/main/request/request.html',
-        controller: 'RequestController',
+      .when('/list', {
+        templateUrl: 'app/main/list/list.html',
+        controller: 'ListController',
         controllerAs: 'vm'
       })
   }

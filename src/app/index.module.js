@@ -6,7 +6,8 @@
 
       // Own modules
       'app.core',
-      'app.request'
+      'app.request',
+      'app.list'
 
     ]);
 

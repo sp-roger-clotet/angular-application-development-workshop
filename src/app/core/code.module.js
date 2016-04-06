@@ -5,7 +5,8 @@
     .module('app.core', [
 
       // Third Party Libraries
-      'ngRoute'
+      'ngRoute',
+      'firebase'
 
     ]);
 
